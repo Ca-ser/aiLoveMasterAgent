@@ -1,6 +1,12 @@
 spring:
   application:
     name: aiLoveMasterAgent
+  ai:
+    dashscope:
+      api-key: sk-89ac886c65ec464694309aab7dcb3a79
+      chat:
+        options:
+          model: qwen-plus
 server:
   port: 8123
   servlet:
@@ -16,9 +22,12 @@ springdoc:
   group-configs:
     - group: 'default'
       paths-to-match: '/**'
-      packages-to-scan: com.yupi.yuaiagent.controller
+      packages-to-scan: com.waiit.ailovemasteragent.controller
 # knife4j
 knife4j:
   enable: true
   setting:
     language: zh_cn
+
+
+
